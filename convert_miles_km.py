@@ -10,7 +10,7 @@ MILES_TO_KM = 1.60934
 class MilesConverterApp(App):
     """Converting miles to kilometers"""
     output_km = StringProperty()
-    
+
     def build(self):
         """ build the Kivy app from the kv file """
         self.title = "Convert Miles to Kilometres"
