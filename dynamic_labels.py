@@ -9,3 +9,11 @@ class DynamicLabelsApp(App):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.names = {"Name_1", "Name_2", "Name_3"}
+
+    def build(self):
+        self.title = "Dynamic Labels"
+        self.root = Builder.load_file('dynamic_labels.kv')
+        return self.root
+
+
+DynamicLabelsApp().run()
